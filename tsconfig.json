@@ -1,0 +1,52 @@
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "allowJs": true,
+    "noEmit": true,
+    "incremental": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"]
+    },
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    // 추가된 설정들
+    "typeRoots": [
+      "./node_modules/@types",
+      "./types"
+    ],
+    "allowSyntheticDefaultImports": true,  // 기본 내보내기가 없는 모듈에서도 기본 가져오기를 허용
+    "downlevelIteration": true,            // for...of 등의 반복문 지원
+    "experimentalDecorators": true,        // 데코레이터 지원
+    "emitDecoratorMetadata": true,         // 데코레이터 메타데이터 지원
+    "noImplicitAny": false                 // Raydium SDK의 일부 타입 문제 해결을 위해
+  },
+  "include": [
+    "next-env.d.ts",
+    ".next/types/**/*.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "types/**/*.ts",                      // 타입 정의 파일 포함
+    "types/**/*.d.ts"                     // 선언 파일 포함
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

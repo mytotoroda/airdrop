@@ -1,0 +1,8 @@
+// public/tokens/unknown.svg
+export const UnknownTokenIcon = `
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="12" cy="12" r="12" fill="#E2E8F0"/>
+  <path d="M12 13.75C12.4142 13.75 12.75 13.4142 12.75 13V8C12.75 7.58579 12.4142 7.25 12 7.25C11.5858 7.25 11.25 7.58579 11.25 8V13C11.25 13.4142 11.5858 13.75 12 13.75Z" fill="#94A3B8"/>
+  <circle cx="12" cy="16" r="1" fill="#94A3B8"/>
+</svg>
+`;
